@@ -1,7 +1,7 @@
 from tqdm import tqdm
 
-from protonets.utils import filter_opt
-from protonets.models import get_model
+from . import filter_opt
+from ..models.factory import get_model
 
 def load(opt):
     model_opt = filter_opt(opt, 'model')

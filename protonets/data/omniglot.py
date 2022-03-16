@@ -13,8 +13,7 @@ from torchvision.transforms import ToTensor
 from torchnet.dataset import ListDataset, TransformDataset
 from torchnet.transform import compose
 
-import protonets
-from protonets.data.base import convert_dict, CudaTransform, EpisodicBatchSampler, SequentialBatchSampler
+from .base import convert_dict, CudaTransform, EpisodicBatchSampler, SequentialBatchSampler
 
 OMNIGLOT_DATA_DIR  = os.path.join(os.path.dirname(__file__), '../../data/omniglot')
 OMNIGLOT_CACHE = { }
