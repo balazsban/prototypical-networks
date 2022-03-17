@@ -67,7 +67,7 @@ def main(opt):
         for split, split_meters in meters.items():
             for field, meter in split_meters.items():
                 meter.reset()
-        state['scheduler'].step()
+        # state['scheduler'].step()
     engine.hooks['on_start_epoch'] = on_start_epoch
 
     def on_update(state):

@@ -48,6 +48,8 @@ class Engine(object):
                 state['t'] += 1
                 state['batch'] += 1
                 self.hooks['on_update'](state)
+            
+            state['scheduler'].step()
 
             state['epoch'] += 1
             state['batch'] = 0
